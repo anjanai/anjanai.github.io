@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+      crossorigin="anonymous"></script>
+    <script >
+    var tabla_bols = {};
+
+function createNotation() {
+    tbody = $("#formatted tbody"); 
+
+    orig = $("#notation").val().trim();
+    var lines = orig.split("\n");
+    $.each(lines, function (i, line) {
+	line = line.trim();
+	markup = "<tr>";
+	$.each(line.split(/\s+/), function (j, phrase) {
+	    markup += "<td>" + phrase + "</td>";
+	});
+	markup += "</tr>\n";
+	tbody.append(markup); 
+    });
+    
+}
+
+function toHex(str) {
+    var result = '';
+    for (var i=0; i<str.length; i++) {
+      result += str.charCodeAt(i).toString(16);
+    }
+    return result;
+}
+
+
+function createVishwamohini() {
+    orig = $("#notation").val().trim();
+    repl = orig.replace(/\|/g, "");
+    var lines = repl.split("\n");
+    converted = "[melody start]\n" ;
+
+    $.each(lines, function (i, line) {
+	line = line.trim();
+	if (line == "") {
+	    converted += line;
+	    return true;
+	}
+
+	bol = ""
+	$.each(line.split(""), function (j, syll) {
+	    console.log(syll);
+	    hex = toHex(syll);
+	    bol += syll;
+	    if (hex < 0x93a)
+	    console.log(toHex(syll));
+	});
+	    
+	line = line.replace(/ +/g, "|");
+        converted += "[" + line + "]" + " [tabla]" + "\n";
+    });
+    
+    converted += "\n[melody end]\n";
+    
+    $("#converted").text(converted);
+}
+
+function insertNote(id) {
+    format = ($('input[name=format]:checked').val());
+    if (format == "vishwamohini") {
+	id = tabla_bols[id];
+    }
+    $("#notation").insertAtCaret(id);
+}
+
+
+function addButtons() {
+    var bols = `
+. . क K3 कत् K4 कि K2 
+. . गे G1  ग G3 घे H1 घि H2 
+. . ता T1 तिं T2 तू T3 ति T4 तेत् T6 त T7
+. . त्र T9 
+. . धा D1  धिं D2 धि D4 धेत् D6
+. . ना N1 न N2 ने N2	
+. . ट T8 ड D8
+. . र R1
+
+`.trim().split(/\s+/);
+    var i=0;
+    for (i=0; i<bols.length; i+=2) {
+	if (bols[i] == '.') {
+	    $("#bols").append("<br>");
+	    continue;
+	}
+	tabla_bols[bols[i]] = bols[i+1];
+	var b = $('<button/>', {
+	    text: bols[i],
+	    id: bols[i],
+	    click: function () { insertNote(this.id); }
+	});
+	$("#bols").append(b);	    
+    }
+    console.log(tabla_bols);
+}
+
+$(document).ready(function () {
+    jQuery.fn.extend({
+        insertAtCaret: function (myValue) {
+            return this.each(function (i) {
+                if (document.selection) {
+                    //For browsers like Internet Explorer
+                    this.focus();
+                    sel = document.selection.createRange();
+                    sel.text = myValue;
+                    this.focus();
+                }
+                else if (this.selectionStart || this.selectionStart == '0') {
+                    //For browsers like Firefox and Webkit based
+                    var startPos = this.selectionStart;
+                    var endPos = this.selectionEnd;
+                    var scrollTop = this.scrollTop;
+                    this.value = this.value.substring(0, startPos) + myValue + this.value.substring(endPos, this.value.length);
+                    this.focus();
+                    this.selectionStart = startPos + myValue.length;
+                    this.selectionEnd = startPos + myValue.length;
+                    this.scrollTop = scrollTop;
+                } else {
+                    this.value += myValue;
+                    this.focus();
+                }
+            })
+        }
+    });
+});
+</script>
+  </head>
+  <body onload="addButtons()">
+    
+    <p> The notations that we use will be from the following set: </p>
+    <span id=bols>
+    </span>
+    
+    <!-- à¤¸à¤¾ -->
+    <table>
+      <tr>
+	<td >
+	  
+	</td>
+	<td>
+	  <form>
+	    <input type="radio" id="devanagari"
+		   name="format" value="devanagari" checked>Devanagari</input>
+	    
+	    <input type="radio" id="vishwamohini"
+		   name="format" value="vishwamohini">Vishwamohini</input>
+
+	    <br>
+
+	    
+	    <textarea id="notation" rows="10" cols="80">धा-घे  ना-तिट  तिटघेना  -त्रक
+धिटघे  ना-घिडनग तिनेतिं  ना-कत
+कत्-ता तिरकिट तिरकिटतक ता-कत
+घेघे-  नानानाना तिरकिटतक धिरधिरकिटतक
+	    </textarea>
+	  </form>
+
+	  <button onclick="createNotation()"> Create Formatted text </button>
+	  <button onclick="createVishwamohini()"> Create Vishwamohini Notation </button>
+	  <br>
+	  <table id=formatted border=1 cellspacing=0 ><tbody></tbody></table>
+	  <pre><span id=converted></span>
+	  </pre>
+	  
+	</td>
+      </tr>
+	</table>    
+  </body>
+</html>
