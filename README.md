@@ -18,6 +18,9 @@ The music can be played online, as well as downloaded from this page.
 
 [Indian Raags Ear Training](ear-training/phrases.html)
 
+[Play music](ear-training/playnotes.html) 
+Play notes using the Indian names of ntoes. "Sa" is changeable.
+
 [Melakartas](music-notation/melakartas.html)
 
 [Scales](music-notation/scales.html)
