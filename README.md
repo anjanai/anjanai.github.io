@@ -4,7 +4,7 @@
 [Leheras for Tabla accompaniment](music-notation/abc_leheras.html)
 
 [Tabla Laykari](/tabla-laykari/?n=5&gaps)
-How to fit 5 syllables in any given number of beats from 1 to 16. "n" can be changed in the url.
+How to fit n syllables in any given number of beats from 1 to 16. "n" can be changed in the url. The url above uses n=5
 
 [Notate.Tabla](tabla-notation/README.html)
 
