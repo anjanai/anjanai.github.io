@@ -23,6 +23,9 @@ Play notes using the Indian names of ntoes. "Sa" is changeable.
 
 [Melakartas](music-notation/melakartas.html)
 
+[Moorchhana](music-notation/moorchhana.html)
+List all possible sclaes derived by rotating a given scale.
+
 [Scales](music-notation/scales.html)
 All possible pentatonic, hexatonic and heptatonic scales in the Hindustani Music system. 
 This contains pentatonic scales that do not contain neither madhyam nor pancham (which is not allowed in the system).
