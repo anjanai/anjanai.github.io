@@ -6,6 +6,9 @@
 [Tabla Laykari](/tabla-laykari/?n=5&gaps)
 How to fit n syllables in any given number of beats from 1 to 16. "n" can be changed in the url. The url above uses n=5
 
+[Tabla Laykari](/tabla-laykari/odd-laya.html)
+1 to 7 syllables in 4 beats.
+
 [Notate.Tabla](tabla-notation/README.html)
 
 
