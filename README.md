@@ -9,7 +9,11 @@ How to fit n syllables in any given number of beats from 1 to 16. "n" can be cha
 [Tabla Laykari](/tabla-laykari/odd-laya.html)
 1 to 7 syllables in 4 beats.
 
+[Carnatic Taal System](/tabla-laykari/carnatic-taals.html)
+Angas, Jaatis, Gatis in the Saludi Sapta Taal System.
+
 [Notate.Tabla](tabla-notation/README.html)
+Notate Tabla compostions.
 
 
 # Hindustani music
