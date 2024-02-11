@@ -39,6 +39,9 @@ This contains pentatonic scales that do not contain neither madhyam nor pancham 
 
 [Notate.Music](music-notation/README.html)
 
+[Bhatkhande style music notation](music-notation/chandrakauns.html)
+Uses https://omenad.github.io/fonts/ome-bhatkhande-english/ and https://omenad.github.io/fonts/ome-bhatkhande-hindi/ to display some notations in Raag Chandrakuns.
+
 
 # Hindi Grammar Learning
 [Adjectives and Possessives](hindi/adjectives.html)
