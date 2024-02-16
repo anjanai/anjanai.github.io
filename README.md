@@ -17,8 +17,8 @@ Notate Tabla compostions.
 
 
 # Hindustani music
-[Bhatkhande style music notation](music-notation/chandrakauns.html)
-Uses https://omenad.github.io/fonts/ome-bhatkhande-english/ and https://omenad.github.io/fonts/ome-bhatkhande-hindi/ to display some notations in Raag Chandrakuns.
+[Bhatkhande style music notation](bhatkhande.md)
+Music rendered in Bhatkhande notation.
 
 [Indian Raag Music in Western Notation](music-notation/compositions.html)
 Music written in SRGM notation, then converted to ABC notation, then rendered online using https://editor.drawthedots.com/.
