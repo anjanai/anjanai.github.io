@@ -17,6 +17,9 @@ Notate Tabla compostions.
 
 
 # Hindustani music
+[Bhatkhande style music notation](music-notation/chandrakauns.html)
+Uses https://omenad.github.io/fonts/ome-bhatkhande-english/ and https://omenad.github.io/fonts/ome-bhatkhande-hindi/ to display some notations in Raag Chandrakuns.
+
 [Indian Raag Music in Western Notation](music-notation/compositions.html)
 Music written in SRGM notation, then converted to ABC notation, then rendered online using https://editor.drawthedots.com/.
 The music can be played online, as well as downloaded from this page.
@@ -38,10 +41,6 @@ All possible pentatonic, hexatonic and heptatonic scales in the Hindustani Music
 This contains pentatonic scales that do not contain neither madhyam nor pancham (which is not allowed in the system).
 
 [Notate.Music](music-notation/README.html)
-
-[Bhatkhande style music notation](music-notation/chandrakauns.html)
-Uses https://omenad.github.io/fonts/ome-bhatkhande-english/ and https://omenad.github.io/fonts/ome-bhatkhande-hindi/ to display some notations in Raag Chandrakuns.
-
 
 # Hindi Grammar Learning
 [Adjectives and Possessives](hindi/adjectives.html)
