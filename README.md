@@ -15,6 +15,9 @@ Angas, Jaatis, Gatis in the Saludi Sapta Taal System.
 [Notate.Tabla](tabla-notation/README.html)
 Notate Tabla compostions.
 
+[Formula for creating Tihais](tabla-notation/create_tihai.html)
+Need to create a tihai to fit in N number of beats? See how to do that.
+
 
 # Hindustani music
 [Bhatkhande style music notation](bhatkhande.md)
