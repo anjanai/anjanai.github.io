@@ -36,8 +36,8 @@ Play notes using the Indian names of ntoes.  The only notes displayed are the on
 
 [Melakartas](music-notation/melakartas.html)
 
-[Moorchhana](music-notation/moorchhana.html)
-List all possible sclaes derived by rotating a given scale.
+[Moorchhana](ear-training/moorchhana.html)
+List all possible scales derived by rotating a given scale.
 
 [Scales](music-notation/scales.html)
 All possible pentatonic, hexatonic and heptatonic scales in the Hindustani Music system. 
