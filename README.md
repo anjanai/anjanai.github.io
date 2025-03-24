@@ -33,7 +33,7 @@ The music can be played online, as well as downloaded from this page.
 
 [Lyrics of music compositions from Bhatkhande's books](music-notation/bhatkhande_lyrics.html)
 
-https://swarasankula.org/ have made available compositions from Bhatkhande's books in a [pdf file](https://swarasankula.org/swarasankula-bhatkande/Lyrics_File.pdf).  The font used makes it impossible to copy the lyrics from this file and paste them anywhere (it shows up as gibberish). Have tried to convert this to a format that can be copied and pasted as is.
+[Swarsankula](https://swarasankula.org/) has made available compositions from Bhatkhande's books in a [pdf file](https://swarasankula.org/swarasankula-bhatkande/Lyrics_File.pdf).  The font used makes it impossible to copy the lyrics from this file and paste them anywhere (it shows up as gibberish). Have tried to convert this to a format that can be copied and pasted as is.
 
 [Play music](ear-training/playnotes.html) 
 Play notes using the Indian names of ntoes.  The only notes displayed are the ones allowed in the chosen raag. "Sa" is changeable.
